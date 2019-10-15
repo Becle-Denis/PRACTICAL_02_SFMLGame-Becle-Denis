@@ -5,7 +5,8 @@ Player::Player()
 	if (m_playerTexture.loadFromFile("rayman.png"))
 	{
 		m_playerSprite.setTexture(m_playerTexture);
-		m_playerSprite.setScale(0.5, 0.5);
+		m_playerSprite.setScale(0.40, 0.40);
+		m_playerSprite.setPosition(400, 0);
 	}
 	else
 	{

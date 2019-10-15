@@ -13,6 +13,10 @@ public:
 	~NPC();
 	void initialize();
 	void update();
-	void draw();
+	void draw(sf::RenderWindow* window);
+
+private:
+	sf::Texture m_NPCTexture;
+	sf::Sprite m_NPCSprite;
 };
 #endif
