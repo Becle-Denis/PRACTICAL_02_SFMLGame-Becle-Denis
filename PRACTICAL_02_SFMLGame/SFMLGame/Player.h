@@ -13,6 +13,10 @@ public:
 	~Player();
 	void initialize();
 	void update();
-	void draw();
+	void draw(sf::RenderWindow* window);
+
+private:
+	sf::Texture m_playerTexture;
+	sf::Sprite m_playerSprite;
 };
 #endif
