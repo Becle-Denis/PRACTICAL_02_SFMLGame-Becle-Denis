@@ -39,6 +39,16 @@ void Game::update()
 		npc->update();
 	}
 
+	//check for collision 
+
+	sf::FloatRect rect1 = player->getBounds();
+	sf::FloatRect rect2 = npc->getBounds();
+
+	if (rect1.intersects(rect2))
+	{
+		std::cout << "COLISION" << std::endl;
+	}
+
 }
 
 void Game::draw()

@@ -15,6 +15,8 @@ public:
 	void update();
 	void draw(sf::RenderWindow* window);
 
+	sf::FloatRect getBounds();
+
 private:
 	sf::Texture m_NPCTexture;
 	sf::Sprite m_NPCSprite;

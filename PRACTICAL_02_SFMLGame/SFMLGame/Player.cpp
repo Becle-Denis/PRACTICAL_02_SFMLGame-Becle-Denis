@@ -28,3 +28,8 @@ void Player::draw(sf::RenderWindow* window)
 	cout << "Player drawing" << endl;
 	window->draw(m_playerSprite);
 }
+
+sf::FloatRect Player::getBounds()
+{
+	return m_playerSprite.getGlobalBounds();
+}

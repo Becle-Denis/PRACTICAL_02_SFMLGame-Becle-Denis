@@ -27,3 +27,8 @@ void NPC::draw(sf::RenderWindow* window)
 	cout << "NPC drawing" << endl;
 	window->draw(m_NPCSprite);
 }
+
+sf::FloatRect NPC::getBounds()
+{
+	return m_NPCSprite.getGlobalBounds();
+}
