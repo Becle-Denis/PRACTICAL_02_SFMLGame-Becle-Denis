@@ -16,15 +16,15 @@ NPC::~NPC(){};
 
 void NPC::initialize()
 {
-	cout << "NPC initialize" << endl;
+	//cout << "NPC initialize" << endl;
 }
 void NPC::update()
 {
-	cout << "NPC updating" << endl;
+	//cout << "NPC updating" << endl;
 }
 void NPC::draw(sf::RenderWindow* window)
 {
-	cout << "NPC drawing" << endl;
+	//cout << "NPC drawing" << endl;
 	window->draw(m_NPCSprite);
 }
 

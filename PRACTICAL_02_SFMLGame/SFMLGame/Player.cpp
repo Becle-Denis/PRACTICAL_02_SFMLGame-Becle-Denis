@@ -17,15 +17,27 @@ Player::~Player(){};
 
 void Player::initialize()
 {
-	cout << "Player initialize" << endl;
+	//cout << "Player initialize" << endl;
 }
 void Player::update()
 {
-	cout << "Player updating" << endl;
+	//cout << "Player updating" << endl;
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left))
+	{
+		sf::Vector2f position = m_playerSprite.getPosition();
+		position.x--;
+		m_playerSprite.setPosition(position);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right))
+	{
+		sf::Vector2f position = m_playerSprite.getPosition();
+		position.x++;
+		m_playerSprite.setPosition(position);
+	}
 }
 void Player::draw(sf::RenderWindow* window)
 {
-	cout << "Player drawing" << endl;
+	//cout << "Player drawing" << endl;
 	window->draw(m_playerSprite);
 }
 

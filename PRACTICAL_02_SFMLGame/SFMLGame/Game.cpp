@@ -55,8 +55,9 @@ void Game::draw()
 {
 	window->clear();
 	//window->draw(shape);
-	player->draw(window);
+	
 	npc->draw(window);
+	player->draw(window);
 	window->display();
 }
 
